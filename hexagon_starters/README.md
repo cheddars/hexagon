@@ -1,14 +1,25 @@
 
-# Application Templates
+## Maven Starters
 
-Each subdirectory starting with `hexagon_` inside this module is a different template.
+This module holds the Maven parent POMs with Kotlin setup to ease the project creation using
+[Maven](https://maven.apache.org). To use them declare the following `parent` section inside your
+`pom.xml` file:
 
-You can package the templates locally with the command:
+```xml
+<parent>
+<groupId>com.hexagonkt</groupId>
+<artifactId>kotlin_pom</artifactId>
+<version>$VERSION</version>
+</parent>
+```
 
-    # TODO Addapt to Maven Archetypes
-    ./gradlew clean && ./gradlew processTemplate
+Or:
 
-## Starters Code
 
-For convenience, the code used to generate the templates is in `src/`. It is tested before being
-copied to the template.
+```xml
+<parent>
+<groupId>com.hexagonkt</groupId>
+<artifactId>kotlin_lean_pom</artifactId>
+<version>$VERSION</version>
+</parent>
+```
